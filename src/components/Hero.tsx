@@ -28,7 +28,7 @@ export default function Hero() {
 							: 'opacity-0 translate-y-10'
 					}`}>
 					{/* Greeting */}
-					<p className='text-green-600 dark:text-green-400 font-medium mb-4 animate-pulse'>
+					<p className='text-3xl text-green-600 dark:text-green-400 font-medium mb-4 animate-pulse'>
 						👋 Hello, I'm
 					</p>
 

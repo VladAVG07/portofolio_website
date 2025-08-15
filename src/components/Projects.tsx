@@ -8,79 +8,68 @@ export default function Projects() {
 	const projects = [
 		{
 			id: 1,
-			title: 'E-Commerce Platform',
+			title: 'Restaurant Mobile',
 			description:
-				'A full-stack e-commerce platform built with Next.js, featuring user authentication, payment processing, and admin dashboard.',
+				'Cross-platform food delivery app using React Native and Expo.',
 			image: '/api/placeholder/400/250',
-			category: 'fullstack',
-			technologies: ['Next.js', 'TypeScript', 'Stripe', 'MongoDB'],
+			category: 'frontend',
+			technologies: ['React Native', 'JavaScript', 'Axios', 'Expo'],
 			liveUrl: '#',
-			githubUrl: '#',
+			githubUrl: 'https://github.com/VladAVG07/RestaurantMobile',
 			featured: true,
 		},
 		{
 			id: 2,
-			title: 'Task Management App',
+			title: 'Supply Chain Management App',
 			description:
-				'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+				'Developed a full-stack Django application to streamline supply chain operations',
 			image: '/api/placeholder/400/250',
-			category: 'frontend',
-			technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
+			category: 'fullstack',
+			technologies: ['Django', 'Python', 'Kafka', 'Postgres'],
 			liveUrl: '#',
-			githubUrl: '#',
+			githubUrl: 'https://github.com/VladAVG07/SupplyChainManagement',
 			featured: true,
 		},
 		{
 			id: 3,
-			title: 'Weather Dashboard',
+			title: 'Transport Company Management App',
 			description:
-				'A beautiful weather dashboard that displays current weather and forecasts with interactive maps and detailed analytics.',
+				'Built a desktop application for trucking company operations using Java',
 			image: '/api/placeholder/400/250',
-			category: 'frontend',
-			technologies: ['React', 'OpenWeather API', 'Chart.js', 'CSS3'],
+			category: 'fullstack',
+			technologies: [
+				'Java',
+				'Swing',
+				'Derby',
+				'Observer, MVC, Service Repository',
+				'Jasper Reports',
+			],
 			liveUrl: '#',
-			githubUrl: '#',
+			githubUrl: 'https://github.com/McFan66/programarisoferi',
 			featured: false,
 		},
 		{
 			id: 4,
-			title: 'REST API Service',
+			title: 'ARP Spoofer',
 			description:
-				'A robust REST API service built with Node.js and Express, featuring authentication, rate limiting, and comprehensive documentation.',
+				'This Python project performs ARP spoofing to intercept traffic between a target server and router. It also includes a packet sniffer that monitors TCP port 80 traffic',
 			image: '/api/placeholder/400/250',
-			category: 'backend',
-			technologies: ['Node.js', 'Express', 'JWT', 'PostgreSQL'],
+			category: 'fullstack',
+			technologies: ['Python', 'Sockets', 'Docker', 'Networking'],
 			liveUrl: '#',
-			githubUrl: '#',
+			githubUrl: 'https://github.com/VladAVG07/ARP_Spoofer',
 			featured: false,
 		},
 		{
 			id: 5,
-			title: 'Portfolio Website',
+			title: 'This Website',
 			description:
 				'A modern, responsive portfolio website showcasing projects and skills with smooth animations and dark mode support.',
 			image: '/api/placeholder/400/250',
 			category: 'frontend',
-			technologies: [
-				'Next.js',
-				'Tailwind CSS',
-				'Framer Motion',
-				'TypeScript',
-			],
+			technologies: ['Next.js', 'Tailwind CSS', 'TypeScript'],
 			liveUrl: '#',
-			githubUrl: '#',
-			featured: false,
-		},
-		{
-			id: 6,
-			title: 'Chat Application',
-			description:
-				'A real-time chat application with user authentication, message history, and file sharing capabilities.',
-			image: '/api/placeholder/400/250',
-			category: 'fullstack',
-			technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-			liveUrl: '#',
-			githubUrl: '#',
+			githubUrl: 'https://github.com/VladAVG07/PortofolioWebsite',
 			featured: false,
 		},
 	];
@@ -89,7 +78,7 @@ export default function Projects() {
 		{ id: 'all', name: 'All Projects' },
 		{ id: 'frontend', name: 'Frontend' },
 		{ id: 'backend', name: 'Backend' },
-		{ id: 'fullstack', name: 'Full Stack' },
+		{ id: 'fullstack', name: 'Mixed' },
 	];
 
 	const filteredProjects =
@@ -166,11 +155,6 @@ export default function Projects() {
 
 								{/* Project Links */}
 								<div className='flex gap-3'>
-									<a
-										href={project.liveUrl}
-										className='flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-2 px-4 rounded-lg font-medium transition-colors duration-300'>
-										Live Demo
-									</a>
 									<a
 										href={project.githubUrl}
 										className='flex-1 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 text-center py-2 px-4 rounded-lg font-medium transition-colors duration-300'>

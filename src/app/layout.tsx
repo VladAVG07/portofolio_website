@@ -6,12 +6,21 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Your Name - Portfolio',
+	title: 'Vlad Apostol - Portfolio',
 	description:
-		'Full-stack developer passionate about creating amazing web experiences',
-	keywords: ['developer', 'portfolio', 'web development', 'react', 'next.js'],
-	authors: [{ name: 'Your Name' }],
-	creator: 'Your Name',
+		'Developer passionate about creating amazing software solutions',
+	keywords: [
+		'developer',
+		'portfolio',
+		'web development',
+		'react',
+		'next.js',
+		'software',
+		'mobile',
+		'desktopd',
+	],
+	authors: [{ name: 'Vlad Apostol' }],
+	creator: 'Vlad Apostol',
 };
 
 export default function RootLayout({
