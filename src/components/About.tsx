@@ -39,15 +39,15 @@ export default function About() {
 						</h3>
 
 						<p className='text-gray-600 dark:text-gray-300 mb-6 leading-relaxed'>
-							I can't say that I am a full-stack developer, data
-							scientist etc. I am just passionate in building
+							I can&apos;t say that I am a full-stack developer,
+							data scientist etc. I am just passionate in building
 							every kind of software solutions which solve
 							real-world problems.
 						</p>
 
 						<p className='text-gray-600 dark:text-gray-300 mb-8 leading-relaxed'>
-							When I'm not coding, you can find me in the park
-							running or in the gym =)
+							When I&apos;m not coding, you can find me in the
+							park running or in the gym =)
 						</p>
 
 						{/* Key Points */}
@@ -69,7 +69,7 @@ export default function About() {
 							<div className='flex items-center'>
 								<div className='w-2 h-2 bg-green-600 rounded-full mr-3'></div>
 								<span className='text-gray-700 dark:text-gray-300'>
-									<strong>Bachelor's degree</strong> in
+									<strong>Bachelor&apos;s degree</strong> in
 									Computer Engineering
 								</span>
 							</div>

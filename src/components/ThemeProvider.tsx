@@ -14,7 +14,6 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({
 	children,
 	defaultTheme = 'dark',
-	attribute = 'class',
 	enableSystem = true,
 }: {
 	children: React.ReactNode;

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function Contact() {
 	const [formData, setFormData] = useState({
@@ -186,10 +186,10 @@ export default function Contact() {
 						</h2>
 						<div className='w-24 h-1 bg-green-600 mx-auto'></div>
 						<p className='mt-4 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto'>
-							I'm always interested in hearing about new
+							I&apos;m always interested in hearing about new
 							opportunities and exciting projects. Feel free to
-							reach out if you'd like to collaborate or just want
-							to say hello!
+							reach out if you&apos;d like to collaborate or just
+							want to say hello!
 						</p>
 					</div>
 
@@ -289,13 +289,13 @@ export default function Contact() {
 						<div className='space-y-8'>
 							<div>
 								<h3 className='text-2xl font-semibold text-gray-900 dark:text-white mb-6'>
-									Let's connect
+									Let&apos;s connect
 								</h3>
 								<p className='text-gray-600 dark:text-gray-300 mb-8 leading-relaxed'>
-									I'm currently available for freelance work
-									and full-time opportunities. Whether you
-									have a question or just want to say hi, I'll
-									try my best to get back to you!
+									I&apos;m currently available for freelance
+									work and full-time opportunities. Whether
+									you have a question or just want to say hi,
+									I&apos;ll try my best to get back to you!
 								</p>
 							</div>
 

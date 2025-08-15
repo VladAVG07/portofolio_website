@@ -88,7 +88,7 @@ export default function Skills() {
 						Always Learning
 					</h3>
 					<p className='text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed'>
-						I'm constantly expanding my skill set and staying
+						I&apos;m constantly expanding my skill set and staying
 						up-to-date with the latest technologies. Currently
 						exploring advanced React patterns, cloud architecture,
 						and emerging web technologies.

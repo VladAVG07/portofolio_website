@@ -29,7 +29,7 @@ export default function Hero() {
 					}`}>
 					{/* Greeting */}
 					<p className='text-3xl text-green-600 dark:text-green-400 font-medium mb-4 animate-pulse'>
-						👋 Hello, I'm
+						👋 Hello, I&apos;m
 					</p>
 
 					{/* Name */}
