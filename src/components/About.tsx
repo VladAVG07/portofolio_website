@@ -18,7 +18,7 @@ export default function About() {
 							<div className='w-80 h-80 mx-auto bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center'>
 								<div className='w-72 h-72 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center overflow-hidden'>
 									<Image
-										src='/images/pozaCV.jpg'
+										src='/images/poza.jpg'
 										alt='Vlad Apostol - Developer'
 										width={288}
 										height={288}
