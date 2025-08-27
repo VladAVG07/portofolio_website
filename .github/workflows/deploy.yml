@@ -32,10 +32,10 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SECRET_KEY }}
           source: |
-            .next
+            .next/
             package.json
             package-lock.json
-            public
+            public/
           target: /var/www/portofolio-website
 
       # 5️⃣ Reload PM2 with zero downtime
@@ -46,7 +46,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SECRET_KEY }}
           script: |
-            cd /var/www/my-nextjs-app
+            cd /var/www/portofolio_website
             sudo npm install
             # Reload gracefully
             sudo pm2 reload next-app
