@@ -58,27 +58,44 @@ export default function Skills() {
 				{/* Skills Grid */}
 				<div className='grid md:grid-cols-2 gap-8'>
 					{skills[activeCategory as keyof typeof skills].map(
-						(skill) => (
-							<div
-								key={skill.name}
-								className='bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300'>
-								<div className='flex justify-between items-center mb-2'>
-									<h3 className='font-semibold text-gray-900 dark:text-white'>
-										{skill.name}
-									</h3>
-									<span className='text-sm text-gray-500 dark:text-gray-400'>
-										{skill.level}%
-									</span>
+						(skill) => {
+							const maxStars = 5;
+							const filledStars = Math.round(
+								(skill.level / 100) * maxStars
+							);
+							const emptyStars = maxStars - filledStars;
+							return (
+								<div
+									key={skill.name}
+									className='bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300'>
+									<div className='flex justify-between items-center mb-2'>
+										<h3 className='font-semibold text-gray-900 dark:text-white'>
+											{skill.name}
+										</h3>
+										<div className='flex items-center'>
+											{[...Array(filledStars)].map(
+												(_, i) => (
+													<span
+														key={i}
+														className='text-yellow-400 text-lg'>
+														★
+													</span>
+												)
+											)}
+											{[...Array(emptyStars)].map(
+												(_, i) => (
+													<span
+														key={i}
+														className='text-gray-300 dark:text-gray-600 text-lg'>
+														★
+													</span>
+												)
+											)}
+										</div>
+									</div>
 								</div>
-								<div className='w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2'>
-									<div
-										className={`${skill.color} h-2 rounded-full transition-all duration-1000 ease-out`}
-										style={{
-											width: `${skill.level}%`,
-										}}></div>
-								</div>
-							</div>
-						)
+							);
+						}
 					)}
 				</div>
 
